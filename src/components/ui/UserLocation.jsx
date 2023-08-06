@@ -1,12 +1,8 @@
-import { useLocation } from "../hooks/useLocation"
-
-export function UserLocation() {
-  let { latitude, longitude } = useLocation()
-
+export function UserLocation({ userCity }) {
   return (
     <>
-      <div className="font-inter font-medium text-sm">
-        {latitude}, {longitude}
+      <div className="font-inter font-medium text-lg w-fit">
+        {`${userCity}`}
       </div>
     </>
   )
